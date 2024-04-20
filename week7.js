@@ -63,5 +63,39 @@ let word = "word";
 let n = 3;
 console.log(myFunction(word, n));
 
+function myFullName(firstName, lastName) {
+    return firstName + " " + lastName;
+}
+let fullName = myFullName("Desmond", "Turner")
+console.log(fullName)
 
+
+function isGreaterThan100(numbers) {
+    let sum = 0; 
+    for (let i = 0; i < numbers.length; i++) {
+      sum += numbers[i];
+}
+   return sum > 100;
+}
+    let numbers = [20, 30, 5, 70];
+    let answer = isGreaterThan100(numbers);
+ console.log(answer)
+
+
+ 
+ function calculateAverage(numbers1) {
+    let sum = 0;
+    for (let i = 0; i < numbers1.length; i++) {
+        sum += numbers1[i];
+    }
+    return sum / numbers1.length;
+}
+
+let numbers1 = [20, 30, 5, 70];
+console.log(calculateAverage(numbers1))
+
+/*Had problems trying to figure this one out.
+function compareAverages( num1, num2) {
+
+}*/
 
