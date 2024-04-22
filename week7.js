@@ -94,8 +94,26 @@ function isGreaterThan100(numbers) {
 let numbers1 = [20, 30, 5, 70];
 console.log(calculateAverage(numbers1))
 
-/*Had problems trying to figure this one out.
-function compareAverages( num1, num2) {
 
-}*/
-
+//I missed up somewhere because it's printing False!
+function compareAverages(numbs1, numbs2) {
+    let sum1 = 0;
+    for(let i = 0; i < numbs1.length; i++){
+      sum1 += numbs1[i];
+  
+    }
+      let average1 = sum1 / numbs1.length;
+   
+     
+       let sum2 = 0;
+       for(let i = 0; i < numbs2.lenght; i++) {
+          sum2 +=  numbs2[i];
+  }
+       let average2 = sum2 / numbs2.lenght;
+       return average1 > average2;
+  }
+     let numbs1 = [20, 30, 70,];
+     let numbs2 = [ 10, 5, 3];
+  
+     console.log(compareAverages(numbs1, numbs2));
+ 
