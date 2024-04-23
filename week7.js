@@ -95,7 +95,7 @@ let numbers1 = [20, 30, 5, 70];
 console.log(calculateAverage(numbers1))
 
 
-//I missed up somewhere because it's printing False!
+
 function compareAverages(numbs1, numbs2) {
     let sum1 = 0;
     for(let i = 0; i < numbs1.length; i++){
@@ -104,16 +104,41 @@ function compareAverages(numbs1, numbs2) {
     }
       let average1 = sum1 / numbs1.length;
    
-     
-       let sum2 = 0;
+     let sum2 = 0;
        for(let i = 0; i < numbs2.lenght; i++) {
           sum2 +=  numbs2[i];
   }
        let average2 = sum2 / numbs2.lenght;
-       return average1 > average2;
+      if (average1 > average2);{
+        return true ;
+      }
   }
      let numbs1 = [20, 30, 70,];
      let numbs2 = [ 10, 5, 3];
   
      console.log(compareAverages(numbs1, numbs2));
+
+
+     function willBuyDrink(isHotOutside, moneyInPocket) {
+      if(isHotOutside && moneyInPocket > 9){
+       return true;
+
+      } else {
+        return false;
+      }
+     }
+       console.log(willBuyDrink(true, 15));
+     
+     //This function was made to determine if the conditons were met to drive the convertible.
+     // It usese the 2 paramters isSunnyOutside and isGasFull to check if it's sunny outside 
+     // and if gas level is greater that 75%.
+       function willDriveCovertible(isSunnyOutside, gasIsFull) {
+        if(isSunnyOutside && gasIsFull > .75){
+        return true; 
+        
+     } else 
+        return false;
+    
+    }
+     console.log(willDriveCovertible(true, .74));
  
